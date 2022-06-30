@@ -38,10 +38,10 @@ async def start(bot, update):
 @bot.on_message(filters.command(["login"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-        "Send **ID & Password** in this manner otherwise bot will not respond.\n\nSend like this:-  **ID*Password**"
-    )                                   
-
-
+        "Send **Number or email** in this manner otherwise bot will not respond.\n\nSend like this:-  **mobile no.*"
+    )  
+    input1: Message = await bot.listen(editable.chat.id)
+    raw_text = input1.text
 
         
         
