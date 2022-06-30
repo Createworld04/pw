@@ -58,7 +58,10 @@ headers={
 data='{"username":'+raw_text+',"countryCode":"+91","organizationId":"5eb393ee95fab7468a79d189"}'
 url="https://api.penpencil.xyz/v1/users/get-otp?smsType=0"
 a=requests.post(url, headers=headers, data=data)
-await m.reply_text(a)
+for data in a:
+       try:
+        
+        await m.reply_text(a)
 
 
         
