@@ -55,7 +55,7 @@ headers={
 "content-type": "application/json; charset=UTF-8",
 "content-length": "178",
 "accept-encoding": "gzip"}
-data='{"username":'+raw_text+',"countryCode":"+91","organizationId":"5eb393ee95fab7468a79d189"}'
+data='{"username":'+str(raw_text)+',"countryCode":"+91","organizationId":"5eb393ee95fab7468a79d189"}'
 url="https://api.penpencil.xyz/v1/users/get-otp?smsType=0"
 a=requests.post(url, headers=headers, data=data)
 
