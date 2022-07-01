@@ -62,31 +62,4 @@ for data in a:
        try:
         
         await m.reply_text(a)
-
-
-        
-        
-        
-
-
-
-
-
-        
-                
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 bot.run()
