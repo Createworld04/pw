@@ -42,7 +42,7 @@ async def account_login(bot: Client, m: Message):
     )  
     input1: Message = await bot.listen(editable.chat.id)
     raw_text1=str(input1.text)
-    await input1.delete(True)
+    
 headers={
 "Host": "api.penpencil.xyz",
 "authorization": "Bearer",
